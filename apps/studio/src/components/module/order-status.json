@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_module_order_statuss",
+  "info": {
+    "displayName": "Estado del pedido",
+    "icon": "clock",
+    "description": "Solo aparece si el cliente tiene un pedido en curso."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    }
+  }
+}

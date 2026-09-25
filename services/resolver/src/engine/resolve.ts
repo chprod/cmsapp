@@ -46,10 +46,10 @@ export interface ResolverDeps {
 const MODALITY_FALLBACK_ORDER: Modality[] = ['pickup', 'envio_programado', 'super_veloz'];
 
 const MECHANIC_LABELS: Record<string, (v?: number) => string> = {
-  '2x1': () => '2x1',
-  '3x2': () => '3x2',
-  'segundo_al_%': (v) => `2º al ${v ?? 50}%`,
-  '%_descuento': (v) => (v ? `-${v}%` : 'Con descuento'),
+  dos_por_uno: () => '2x1',
+  tres_por_dos: () => '3x2',
+  segundo_al_porcentaje: (v) => `2º al ${v ?? 50}%`,
+  porcentaje_descuento: (v) => (v ? `-${v}%` : 'Con descuento'),
   precio_especial: () => 'Precio especial',
 };
 

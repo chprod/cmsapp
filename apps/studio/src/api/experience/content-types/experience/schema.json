@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experiences",
+  "info": {
+    "singularName": "experience",
+    "pluralName": "experiences",
+    "displayName": "Experiencia",
+    "description": "Una Home para una audiencia, alcance de tiendas, modalidad y periodo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "screen": {
+      "type": "enumeration",
+      "enum": [
+        "home"
+      ],
+      "default": "home",
+      "required": true
+    },
+    "audience": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::audience.audience"
+    },
+    "storeScope": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::store-segment.store-segment"
+    },
+    "modalitySuperVeloz": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "modalityPickup": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "modalityEnvioProgramado": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "priority": {
+      "type": "integer",
+      "default": 0,
+      "min": 0,
+      "max": 1000,
+      "required": true
+    },
+    "startsAt": {
+      "type": "datetime"
+    },
+    "endsAt": {
+      "type": "datetime"
+    },
+    "isFallback": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "modules": {
+      "type": "dynamiczone",
+      "components": [
+        "module.hero-banner",
+        "module.promo-banner",
+        "module.promo-mechanic",
+        "module.product-carousel",
+        "module.buy-again",
+        "module.order-status",
+        "module.shopping-lists",
+        "module.category-rail",
+        "module.loyalty",
+        "module.sponsored-carousel"
+      ]
+    },
+    "notes": {
+      "type": "text"
+    },
+    "reviewWarnings": {
+      "type": "text"
+    },
+    "minContractVersion": {
+      "type": "string"
+    },
+    "publishedVersion": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

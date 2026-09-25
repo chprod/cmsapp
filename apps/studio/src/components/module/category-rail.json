@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_module_category_rails",
+  "info": {
+    "displayName": "Categorías",
+    "icon": "dashboard",
+    "description": "Hasta 10 categorías. Escribe los IDs separados por coma."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": false,
+      "maxLength": 40
+    },
+    "categoryIds": {
+      "type": "string",
+      "required": true,
+      "regex": "^[a-z0-9_-]+(\\s*,\\s*[a-z0-9_-]+){0,9}$"
+    }
+  }
+}

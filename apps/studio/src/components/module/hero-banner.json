@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_module_hero_banners",
+  "info": {
+    "displayName": "Hero",
+    "icon": "picture",
+    "description": "Banner principal. Nunca hornees texto en la imagen."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": true,
+      "maxLength": 140
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

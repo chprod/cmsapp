@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_module_promo_mechanics",
+  "info": {
+    "displayName": "Mecánica promocional",
+    "icon": "discuss",
+    "description": "2x1, 3x2, 2º al %, % de descuento o precio especial sobre una colección. Muestra precio por unidad."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "mechanic": {
+      "type": "enumeration",
+      "enum": [
+        "dos_por_uno",
+        "tres_por_dos",
+        "segundo_al_porcentaje",
+        "porcentaje_descuento",
+        "precio_especial"
+      ],
+      "required": true
+    },
+    "mechanicValue": {
+      "type": "integer",
+      "min": 1,
+      "max": 99
+    },
+    "collectionId": {
+      "type": "string",
+      "required": true
+    },
+    "maxItems": {
+      "type": "integer",
+      "min": 1,
+      "max": 20,
+      "default": 8
+    }
+  }
+}

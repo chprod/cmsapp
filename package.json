@@ -13,7 +13,7 @@
     "dev": "npm run dev -w @chedraui-xp/resolver",
     "start": "npm run start -w @chedraui-xp/resolver",
     "test": "node --test --test-reporter=spec \"packages/*/test/*.test.ts\" \"services/*/test/*.test.ts\" \"tools/*/test/*.test.ts\"",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p packages/contract && tsc -p services/resolver && tsc -p tools/audit",
     "build:contract": "npm run build -w @chedraui-xp/contract",
     "audit:fase0": "node tools/audit/src/cli.ts",
     "check": "npm run typecheck && npm test"

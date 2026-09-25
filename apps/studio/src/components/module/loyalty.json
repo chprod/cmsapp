@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_module_loyaltys",
+  "info": {
+    "displayName": "Lealtad",
+    "icon": "star",
+    "description": "Cambia solo entre socio y no socio."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "memberTitle": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "nonMemberTitle": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

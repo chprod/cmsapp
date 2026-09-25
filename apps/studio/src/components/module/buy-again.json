@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_module_buy_agains",
+  "info": {
+    "displayName": "Volver a comprar",
+    "icon": "arrowLeft",
+    "description": "Solo aparece a clientes con al menos 1 pedido."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "maxItems": {
+      "type": "integer",
+      "min": 1,
+      "max": 20,
+      "default": 10
+    }
+  }
+}

@@ -1,0 +1,6 @@
+id,fecha_solicitud,fecha_produccion,tipo,requirio_release,cabe_en_slot_fijo,notas
+HOME-101,2026-06-03,2026-06-19,banner,si,si,Hero Día del Padre
+HOME-102,2026-06-05,2026-06-10,fechas_campana,no,si,Cambio de vigencia por Remote Config
+HOME-103,2026-06-12,2026-07-02,orden_modulos,si,no,Subir Volver a comprar para recurrentes
+HOME-104,2026-06-20,2026-07-08,segmentacion_tienda,si,no,Promo FyV solo CDMX
+HOME-105,2026-07-01,,nuevo_modulo,si,no,Mecánica 2x1 (no salió)

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "Botón (CTA)",
+    "icon": "cursor",
+    "description": "Texto ≤ 24 caracteres y deeplink chedraui://ruta/id"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 24
+    },
+    "deeplink": {
+      "type": "string",
+      "required": true,
+      "regex": "^chedraui:\\/\\/[a-z]+(\\/[A-Za-z0-9_-]+)?\\/?$"
+    }
+  }
+}

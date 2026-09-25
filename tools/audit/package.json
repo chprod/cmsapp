@@ -1,0 +1,8 @@
+{
+  "name": "@chedraui-xp/audit",
+  "version": "0.1.0-alpha",
+  "private": true,
+  "description": "Fase 0 · H1: audita solicitudes de cambio a la Home y recomienda Go / Slots fijos / No-go",
+  "type": "module",
+  "bin": { "audit-fase0": "src/cli.ts" }
+}

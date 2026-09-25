@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_module_shopping_listss",
+  "info": {
+    "displayName": "Mis listas",
+    "icon": "bulletList",
+    "description": "Solo aparece si el cliente tiene al menos 1 lista."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    }
+  }
+}

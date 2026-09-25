@@ -11,6 +11,7 @@ import {
   type AudienceRef,
   type AudienceRule,
   type EditorialModule,
+  type Modality,
   type Experience,
   type RegistryEntry,
   type StoreSegment,
@@ -193,7 +194,7 @@ export class StrapiContentSource implements ContentSource {
           const seg = segById.get(s.documentId);
           return seg ? [seg] : [];
         }),
-        modalities: (Array.isArray(e.modalities) ? e.modalities : ['todas']) as Experience['modalities'],
+        modalities: strapiModalities(e),
         priority: Number(e.priority ?? 0),
         modules: ((e.modules as Record<string, unknown>[] | null) ?? []).map((m) => strapiModule(m, audById)),
         startsAt: (e.startsAt as string | null) ?? null,
@@ -206,6 +207,17 @@ export class StrapiContentSource implements ContentSource {
 
     return { experiences, registry, segments, audiences, loadedAt: new Date().toISOString(), source: 'strapi' };
   }
+}
+
+/** En Strapi la modalidad son tres casillas (más claro para el editor que un JSON). */
+function strapiModalities(e: StrapiDoc): Experience['modalities'] {
+  const flags: [unknown, Modality][] = [
+    [e.modalitySuperVeloz, 'super_veloz'],
+    [e.modalityPickup, 'pickup'],
+    [e.modalityEnvioProgramado, 'envio_programado'],
+  ];
+  const on = flags.filter(([v]) => v !== false).map(([, m]) => m);
+  return on.length === flags.length ? ['todas'] : on;
 }
 
 /** Convierte un componente de Dynamic Zone (`__component: module.hero-banner`) al módulo del contrato. */

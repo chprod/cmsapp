@@ -58,7 +58,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -92,7 +92,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -123,7 +123,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -184,7 +184,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -241,7 +241,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -391,7 +391,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -485,7 +485,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -579,7 +579,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -613,7 +613,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -704,7 +704,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -795,7 +795,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -827,7 +827,7 @@
     ]
    },
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {
@@ -891,7 +891,7 @@
    },
    "listPrice": 34.0,
    "promo": {
-    "mechanic": "%_descuento"
+    "mechanic": "porcentaje_descuento"
    }
   },
   {

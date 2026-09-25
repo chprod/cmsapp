@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "component_registries",
+  "info": {
+    "singularName": "component-registry",
+    "pluralName": "component-registries",
+    "displayName": "Registro de componentes",
+    "description": "Contrato, certificación, versión mínima de app, fallback y kill switch de cada tipo de módulo. Solo DS Admin"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "hero-banner",
+        "promo-banner",
+        "promo-mechanic",
+        "product-carousel",
+        "buy-again",
+        "order-status",
+        "shopping-lists",
+        "category-rail",
+        "loyalty",
+        "sponsored-carousel"
+      ],
+      "required": true,
+      "unique": true
+    },
+    "version": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "beta",
+        "certified",
+        "deprecated"
+      ],
+      "default": "draft",
+      "required": true
+    },
+    "minAppVersionIOS": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "minAppVersionAndroid": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "fallbackBehavior": {
+      "type": "enumeration",
+      "enum": [
+        "hide",
+        "replace_with",
+        "static_image"
+      ],
+      "default": "hide",
+      "required": true
+    },
+    "replaceWith": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::component-registry.component-registry"
+    },
+    "minAvailableItems": {
+      "type": "integer",
+      "min": 1,
+      "max": 20
+    },
+    "jsonSchema": {
+      "type": "json"
+    },
+    "tokensUsed": {
+      "type": "json"
+    },
+    "ownerEmail": {
+      "type": "email"
+    },
+    "killSwitch": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

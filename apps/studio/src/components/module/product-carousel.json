@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_module_product_carousels",
+  "info": {
+    "displayName": "Carrusel de productos",
+    "icon": "apps",
+    "description": "Colección curada, regla o recomendación. Si hay menos de 4 productos disponibles en la tienda del cliente, no se muestra."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "collection",
+        "rule",
+        "recommendation"
+      ],
+      "default": "collection",
+      "required": true
+    },
+    "collectionId": {
+      "type": "string"
+    },
+    "ruleId": {
+      "type": "string"
+    },
+    "recommendationSlot": {
+      "type": "string"
+    },
+    "maxItems": {
+      "type": "integer",
+      "min": 1,
+      "max": 20,
+      "default": 12
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}

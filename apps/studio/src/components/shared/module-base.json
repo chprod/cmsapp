@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_module_bases",
+  "info": {
+    "displayName": "Configuración del módulo",
+    "icon": "cog",
+    "description": "Campos comunes a todo módulo: clave de analytics, espacio superior y regla de visibilidad"
+  },
+  "options": {},
+  "attributes": {
+    "moduleKey": {
+      "type": "string",
+      "required": true,
+      "regex": "^[a-z0-9_]+$",
+      "maxLength": 40
+    },
+    "spacingTop": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "s",
+        "m",
+        "l"
+      ],
+      "default": "m",
+      "required": true
+    },
+    "trackingLabel": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "visibilityRule": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::audience.audience"
+    },
+    "fallbackImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fallbackImageAlt": {
+      "type": "string",
+      "maxLength": 140
+    }
+  }
+}

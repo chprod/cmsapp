@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audiences",
+  "info": {
+    "singularName": "audience",
+    "pluralName": "audiences",
+    "displayName": "Audiencia",
+    "description": "Grupo de clientes definido por reglas. El editor solo ve el nombre y el resumen en español"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 60
+    },
+    "ruleSummary": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "rule": {
+      "type": "json",
+      "required": true
+    },
+    "isTestAudience": {
+      "type": "boolean",
+      "default": false
+    },
+    "estimatedReach": {
+      "type": "integer"
+    }
+  }
+}

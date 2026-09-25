@@ -67,7 +67,7 @@
         { "type": "order-status", "moduleKey": "estado_pedido", "spacingTop": "none", "props": {} },
         { "type": "buy-again", "moduleKey": "volver_a_comprar", "spacingTop": "m", "props": { "title": "Volver a comprar", "maxItems": 10 } },
         { "type": "shopping-lists", "moduleKey": "mis_listas", "spacingTop": "l", "props": { "title": "Tus listas" } },
-        { "type": "promo-mechanic", "moduleKey": "ofertas_despensa", "spacingTop": "l", "trackingLabel": "Ofertas % despensa", "props": { "title": "Ofertas en tu despensa", "mechanic": "%_descuento", "collectionId": "ofertas-despensa", "maxItems": 8 } },
+        { "type": "promo-mechanic", "moduleKey": "ofertas_despensa", "spacingTop": "l", "trackingLabel": "Ofertas % despensa", "props": { "title": "Ofertas en tu despensa", "mechanic": "porcentaje_descuento", "collectionId": "ofertas-despensa", "maxItems": 8 } },
         { "type": "product-carousel", "moduleKey": "para_ti", "spacingTop": "l", "props": { "title": "Te puede interesar", "source": "recommendation", "recommendationSlot": "para-ti", "maxItems": 8 } },
         { "type": "sponsored-carousel", "moduleKey": "patrocinado_bebidas", "spacingTop": "l", "props": { "title": "Bebidas para compartir", "advertiser": "Bebidas MX", "collectionId": "patrocinado-bebidas", "maxItems": 6 } },
         { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "l", "props": { "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar", "bebe"] } }
@@ -93,7 +93,7 @@
           "props": { "image": { "url": "https://cdn.chedraui.example/hero/fyv.webp", "alt": "Frutas y verduras frescas de temporada" }, "title": "Frutas y verduras a mitad de precio", "subtitle": "Solo en tiendas de CDMX", "cta": { "label": "Ver ofertas", "deeplink": "chedraui://coleccion/fyv-temporada" } } },
         { "type": "buy-again", "moduleKey": "volver_a_comprar", "spacingTop": "m", "visibilityRule": "aud_con_pedidos", "props": { "title": "Volver a comprar", "maxItems": 10 } },
         { "type": "product-carousel", "moduleKey": "fyv_temporada", "spacingTop": "l", "props": { "title": "Frescos de temporada", "source": "collection", "collectionId": "fyv-temporada", "maxItems": 10 } },
-        { "type": "promo-mechanic", "moduleKey": "ofertas_despensa", "spacingTop": "l", "props": { "title": "Completa tu despensa", "mechanic": "%_descuento", "collectionId": "ofertas-despensa", "maxItems": 8 } },
+        { "type": "promo-mechanic", "moduleKey": "ofertas_despensa", "spacingTop": "l", "props": { "title": "Completa tu despensa", "mechanic": "porcentaje_descuento", "collectionId": "ofertas-despensa", "maxItems": 8 } },
         { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "l", "props": { "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar"] } }
       ]
     },

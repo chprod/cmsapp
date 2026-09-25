@@ -40,7 +40,7 @@ export interface Cta {
   deeplink: string;
 }
 
-export const PROMO_MECHANICS = ['2x1', '3x2', 'segundo_al_%', '%_descuento', 'precio_especial'] as const;
+export const PROMO_MECHANICS = ['dos_por_uno', 'tres_por_dos', 'segundo_al_porcentaje', 'porcentaje_descuento', 'precio_especial'] as const;
 export type PromoMechanicKind = (typeof PROMO_MECHANICS)[number];
 
 export const PRODUCT_SOURCES = ['collection', 'rule', 'recommendation'] as const;

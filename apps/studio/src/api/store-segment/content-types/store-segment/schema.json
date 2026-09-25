@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "store_segments",
+  "info": {
+    "singularName": "store-segment",
+    "pluralName": "store-segments",
+    "displayName": "Segmento de tiendas",
+    "description": "Grupo de tiendas (zona, ciudad o formato)"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "maxLength": 60
+    },
+    "zone": {
+      "type": "string"
+    },
+    "stores": {
+      "type": "json",
+      "required": true
+    },
+    "supportsSuperVeloz": {
+      "type": "boolean"
+    }
+  }
+}

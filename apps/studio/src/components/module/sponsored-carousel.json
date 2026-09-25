@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_module_sponsored_carousels",
+  "info": {
+    "displayName": "Carrusel patrocinado",
+    "icon": "information",
+    "description": "Lleva la etiqueta \"Patrocinado\" fija. Máximo 1 por Home y nunca en primera posición."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "advertiser": {
+      "type": "string",
+      "required": true,
+      "maxLength": 60
+    },
+    "collectionId": {
+      "type": "string",
+      "required": true
+    },
+    "maxItems": {
+      "type": "integer",
+      "min": 1,
+      "max": 20,
+      "default": 6
+    }
+  }
+}

@@ -12,3 +12,4 @@ apps/studio/build/
 apps/studio/public/uploads/*
 !apps/studio/public/uploads/.gitkeep
 apps/studio/types/generated/
+apps/studio/.strapi-updater.json

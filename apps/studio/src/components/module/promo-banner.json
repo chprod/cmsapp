@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_module_promo_banners",
+  "info": {
+    "displayName": "Banner de promoción",
+    "icon": "priceTag",
+    "description": "Se oculta solo al vencer."
+  },
+  "options": {},
+  "attributes": {
+    "base": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.module-base",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": true,
+      "maxLength": 140
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "mechanicLabel": {
+      "type": "string",
+      "maxLength": 40
+    },
+    "validUntil": {
+      "type": "datetime"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.cta"
+    }
+  }
+}
