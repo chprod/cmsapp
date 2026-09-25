@@ -2,7 +2,7 @@
  * Elegibilidad de experiencias: qué Home le toca a este cliente, en esta tienda,
  * con esta modalidad, ahora. Pura y determinista: fácil de probar (§5.2).
  */
-import { evaluateRule, type CustomerContext, type Experience, type Modality } from '@chedraui-xp/contract';
+import { MODALITY_LABELS, evaluateRule, type CustomerContext, type Experience, type Modality } from '@chedraui-xp/contract';
 
 export interface SelectionInput {
   experiences: Experience[];
@@ -24,11 +24,14 @@ export interface Selection {
   candidates: Candidate[];
 }
 
+const DATE = new Intl.DateTimeFormat('es-MX', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'America/Mexico_City' });
+const fmt = (iso: string) => DATE.format(new Date(iso));
+
 function check(e: Experience, input: SelectionInput): { eligible: boolean; reason: string } {
   const t = input.now.getTime();
   if (e.screen !== 'home') return { eligible: false, reason: 'Otra pantalla' };
-  if (e.startsAt && Date.parse(e.startsAt) > t) return { eligible: false, reason: `Todavía no empieza (${e.startsAt})` };
-  if (e.endsAt && Date.parse(e.endsAt) <= t) return { eligible: false, reason: `Ya terminó (${e.endsAt})` };
+  if (e.startsAt && Date.parse(e.startsAt) > t) return { eligible: false, reason: `Empieza el ${fmt(e.startsAt)}` };
+  if (e.endsAt && Date.parse(e.endsAt) <= t) return { eligible: false, reason: `Terminó el ${fmt(e.endsAt)}` };
   if (e.storeScope.length > 0) {
     if (!input.storeId) return { eligible: false, reason: 'Es por tienda y el cliente no ha elegido tienda' };
     if (!e.storeScope.some((s) => s.stores.includes(input.storeId as string))) {
@@ -37,7 +40,7 @@ function check(e: Experience, input: SelectionInput): { eligible: boolean; reaso
   }
   const mods = e.modalities;
   if (mods.length > 0 && !mods.includes('todas') && (!input.modality || !mods.includes(input.modality))) {
-    return { eligible: false, reason: `Solo para ${mods.join(', ')}` };
+    return { eligible: false, reason: `Solo para ${mods.map((m) => MODALITY_LABELS[m as Modality] ?? m).join(', ')}` };
   }
   if (!evaluateRule(e.audience.rule, input.customer)) {
     return { eligible: false, reason: `El cliente no está en "${e.audience.name}"` };

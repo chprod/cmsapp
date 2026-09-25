@@ -12,6 +12,7 @@
 import {
   CONTRACT_VERSION,
   LIMITS,
+  MODALITY_LABELS,
   compareSemver,
   evaluateRule,
   type CustomerContext,
@@ -265,7 +266,7 @@ export async function resolveHome(
           const dup = available.length - unique.length;
           throw new Hidden(
             'min_available_items',
-            `Solo ${items.length} productos disponibles${dup ? ` (${dup} ya aparecen más arriba)` : ''} en ${at.storeId ?? 'ninguna tienda'} / ${at.modality ?? 'sin modalidad'}; se necesitan ${minItems}.`,
+            `Solo ${items.length} productos disponibles${dup ? ` (${dup} ya aparecen más arriba)` : ''} en la tienda ${at.storeId ?? 'sin elegir'} con ${at.modality ? MODALITY_LABELS[at.modality] : 'cualquier modalidad'}; se necesitan ${minItems}.`,
           );
         }
         items.forEach((i) => shownSkus.add(i.sku));
