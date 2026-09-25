@@ -1,0 +1,13 @@
+{
+  "stores": [
+    { "id": "0231", "name": "Chedraui Universidad", "city": "CDMX", "zone": "Centro", "modalities": ["super_veloz", "pickup", "envio_programado"] },
+    { "id": "0550", "name": "Chedraui Selecto Polanco", "city": "CDMX", "zone": "Centro", "modalities": ["super_veloz", "pickup", "envio_programado"] },
+    { "id": "0412", "name": "Chedraui Xalapa Centro", "city": "Xalapa", "zone": "Golfo", "modalities": ["pickup", "envio_programado"] },
+    { "id": "0107", "name": "Chedraui Mérida Norte", "city": "Mérida", "zone": "Sureste", "modalities": ["super_veloz", "pickup", "envio_programado"] }
+  ],
+  "segments": [
+    { "id": "seg_cdmx", "name": "CDMX", "zone": "Centro", "stores": ["0231", "0550"] },
+    { "id": "seg_golfo", "name": "Golfo", "zone": "Golfo", "stores": ["0412"] },
+    { "id": "seg_sureste", "name": "Sureste", "zone": "Sureste", "stores": ["0107"] }
+  ]
+}

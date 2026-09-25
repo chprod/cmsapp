@@ -1,0 +1,28 @@
+{
+  "name": "chedraui-experience-studio",
+  "private": true,
+  "version": "0.1.0-alpha",
+  "description": "CMS App alfa · Experience Studio (Strapi) + Experience Resolver + simulador de Home server-driven",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "services/*",
+    "tools/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @chedraui-xp/resolver",
+    "start": "npm run start -w @chedraui-xp/resolver",
+    "test": "node --test --test-reporter=spec \"packages/*/test/*.test.ts\" \"services/*/test/*.test.ts\" \"tools/*/test/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build:contract": "npm run build -w @chedraui-xp/contract",
+    "audit:fase0": "node tools/audit/src/cli.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.3"
+  }
+}

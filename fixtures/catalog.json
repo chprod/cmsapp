@@ -1,0 +1,1099 @@
+{
+ "products": [
+  {
+   "sku": "2000000000011",
+   "name": "Plátano Tabasco por kg",
+   "price": 24.9,
+   "unitPrice": "$24.90 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "2000000000028",
+   "name": "Aguacate Hass por kg",
+   "price": 59.0,
+   "listPrice": 79.0,
+   "unitPrice": "$59.00 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "2000000000035",
+   "name": "Jitomate saladet por kg",
+   "price": 22.5,
+   "listPrice": 29.9,
+   "unitPrice": "$22.50 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "2000000000042",
+   "name": "Mango Ataulfo por kg",
+   "price": 34.9,
+   "listPrice": 46.0,
+   "unitPrice": "$34.90 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "2000000000059",
+   "name": "Limón sin semilla por kg",
+   "price": 38.0,
+   "unitPrice": "$38.00 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "2000000000066",
+   "name": "Papaya maradol por kg",
+   "price": 21.9,
+   "listPrice": 32.0,
+   "unitPrice": "$21.90 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "2000000000073",
+   "name": "Cebolla blanca por kg",
+   "price": 26.5,
+   "unitPrice": "$26.50 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": []
+   }
+  },
+  {
+   "sku": "2000000000080",
+   "name": "Sandía por kg",
+   "price": 14.9,
+   "listPrice": 22.0,
+   "unitPrice": "$14.90 / kg",
+   "categories": [
+    "fyv"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501055300051",
+   "name": "Leche entera Lala 1 L",
+   "price": 32.5,
+   "unitPrice": "$32.50 / L",
+   "categories": [
+    "lacteos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501055363056",
+   "name": "Yoghurt natural Lala 1 kg",
+   "price": 46.0,
+   "unitPrice": "$46.00 / kg",
+   "categories": [
+    "lacteos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501020565904",
+   "name": "Huevo blanco San Juan 18 pzas",
+   "price": 69.9,
+   "unitPrice": "$3.88 / pza",
+   "categories": [
+    "basicos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501000111206",
+   "name": "Pan blanco Bimbo grande 680 g",
+   "price": 52.0,
+   "unitPrice": "$76.47 / kg",
+   "categories": [
+    "panaderia"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501008042953",
+   "name": "Café soluble Nescafé Clásico 200 g",
+   "price": 129.0,
+   "listPrice": 149.0,
+   "unitPrice": "$645.00 / kg",
+   "categories": [
+    "despensa"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501058617125",
+   "name": "Papel higiénico Pétalo 12 rollos",
+   "price": 89.9,
+   "unitPrice": "$7.49 / rollo",
+   "categories": [
+    "hogar"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501000912346",
+   "name": "Frijol negro Verde Valle 900 g",
+   "price": 42.9,
+   "unitPrice": "$47.67 / kg",
+   "categories": [
+    "basicos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501017050017",
+   "name": "Aceite Nutrioli 850 ml",
+   "price": 46.5,
+   "listPrice": 54.0,
+   "unitPrice": "$54.71 / L",
+   "categories": [
+    "basicos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501071901012",
+   "name": "Arroz Verde Valle 900 g",
+   "price": 33.9,
+   "unitPrice": "$37.67 / kg",
+   "categories": [
+    "basicos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501000110131",
+   "name": "Azúcar estándar Zulka 2 kg",
+   "price": 64.0,
+   "unitPrice": "$32.00 / kg",
+   "categories": [
+    "basicos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501052418038",
+   "name": "Atún Dolores en agua 140 g",
+   "price": 22.9,
+   "listPrice": 26.0,
+   "unitPrice": "$163.57 / kg",
+   "categories": [
+    "despensa"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501030417606",
+   "name": "Detergente Ariel 5 kg",
+   "price": 239.0,
+   "listPrice": 289.0,
+   "unitPrice": "$47.80 / kg",
+   "categories": [
+    "hogar"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501199417019",
+   "name": "Refresco Coca-Cola 3 L",
+   "price": 48.0,
+   "unitPrice": "$16.00 / L",
+   "categories": [
+    "bebidas"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501086801046",
+   "name": "Agua Ciel 1.5 L",
+   "price": 16.5,
+   "unitPrice": "$11.00 / L",
+   "categories": [
+    "bebidas"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501025400040",
+   "name": "Queso Oaxaca Chedraui 400 g",
+   "price": 79.0,
+   "listPrice": 95.0,
+   "unitPrice": "$197.50 / kg",
+   "categories": [
+    "lacteos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501040000105",
+   "name": "Tortilla de maíz 1 kg",
+   "price": 23.0,
+   "unitPrice": "$23.00 / kg",
+   "categories": [
+    "basicos"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501006559019",
+   "name": "Galletas Marías Gamesa 170 g",
+   "price": 19.5,
+   "unitPrice": "$114.71 / kg",
+   "categories": [
+    "despensa"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501045403019",
+   "name": "Pañales Huggies etapa 3, 40 pzas",
+   "price": 289.0,
+   "listPrice": 339.0,
+   "unitPrice": "$7.23 / pza",
+   "categories": [
+    "bebe"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7502223770016",
+   "name": "Cerveza Victoria 12 latas",
+   "price": 229.0,
+   "listPrice": 259.0,
+   "unitPrice": "$53.01 / L",
+   "categories": [
+    "bebidas"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "pickup"
+    ]
+   },
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7501035911108",
+   "name": "Jabón Zote rosa 400 g",
+   "price": 21.0,
+   "unitPrice": "$52.50 / kg",
+   "categories": [
+    "hogar"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501013122077",
+   "name": "Jugo Del Valle mango 1 L",
+   "price": 29.5,
+   "unitPrice": "$29.50 / L",
+   "categories": [
+    "bebidas"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   },
+   "listPrice": 34.0,
+   "promo": {
+    "mechanic": "%_descuento"
+   }
+  },
+  {
+   "sku": "7502239560014",
+   "name": "Agua mineral Topo Chico 600 ml",
+   "price": 19.0,
+   "unitPrice": "$31.67 / L",
+   "categories": [
+    "bebidas"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  },
+  {
+   "sku": "7501001303921",
+   "name": "Té helado Lipton limón 1.5 L",
+   "price": 27.9,
+   "unitPrice": "$18.60 / L",
+   "categories": [
+    "bebidas"
+   ],
+   "availability": {
+    "0231": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0550": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ],
+    "0412": [
+     "pickup",
+     "envio_programado"
+    ],
+    "0107": [
+     "super_veloz",
+     "pickup",
+     "envio_programado"
+    ]
+   }
+  }
+ ],
+ "collections": [
+  {
+   "id": "fyv-temporada",
+   "name": "Frutas y verduras de temporada",
+   "skus": [
+    "2000000000011",
+    "2000000000028",
+    "2000000000035",
+    "2000000000042",
+    "2000000000059",
+    "2000000000066",
+    "2000000000073",
+    "2000000000080"
+   ]
+  },
+  {
+   "id": "basicos-canasta",
+   "name": "Básicos de la canasta",
+   "skus": [
+    "7501020565904",
+    "7501000912346",
+    "7501017050017",
+    "7501071901012",
+    "7501000110131",
+    "7501040000105",
+    "7501055300051",
+    "7501000111206"
+   ]
+  },
+  {
+   "id": "ofertas-despensa",
+   "name": "Ofertas de despensa",
+   "skus": [
+    "7501008042953",
+    "7501017050017",
+    "7501052418038",
+    "7501030417606",
+    "7501025400040",
+    "2000000000028",
+    "2000000000035",
+    "7501045403019"
+   ]
+  },
+  {
+   "id": "patrocinado-bebidas",
+   "name": "Bebidas para compartir",
+   "skus": [
+    "7502223770016",
+    "7501199417019",
+    "7501086801046",
+    "7501055363056",
+    "7501006559019",
+    "7501013122077",
+    "7502239560014",
+    "7501001303921"
+   ]
+  },
+  {
+   "id": "buen-fin-hogar",
+   "name": "Buen Fin · Hogar",
+   "skus": [
+    "7501030417606",
+    "7501058617125",
+    "7501035911108",
+    "7501045403019",
+    "7501008042953"
+   ]
+  }
+ ],
+ "categories": [
+  {
+   "id": "fyv",
+   "name": "Frutas y verduras",
+   "emoji": "🥑"
+  },
+  {
+   "id": "lacteos",
+   "name": "Lácteos",
+   "emoji": "🥛"
+  },
+  {
+   "id": "basicos",
+   "name": "Básicos",
+   "emoji": "🌾"
+  },
+  {
+   "id": "panaderia",
+   "name": "Panadería",
+   "emoji": "🍞"
+  },
+  {
+   "id": "despensa",
+   "name": "Despensa",
+   "emoji": "🥫"
+  },
+  {
+   "id": "bebidas",
+   "name": "Bebidas",
+   "emoji": "🥤"
+  },
+  {
+   "id": "hogar",
+   "name": "Limpieza y hogar",
+   "emoji": "🧽"
+  },
+  {
+   "id": "bebe",
+   "name": "Bebé",
+   "emoji": "🍼"
+  },
+  {
+   "id": "carnes",
+   "name": "Carnes",
+   "emoji": "🥩"
+  },
+  {
+   "id": "congelados",
+   "name": "Congelados",
+   "emoji": "🧊"
+  }
+ ],
+ "recommendations": {
+  "populares": [
+   "7501055300051",
+   "7501020565904",
+   "2000000000011",
+   "7501000111206",
+   "7501199417019",
+   "7501017050017",
+   "2000000000035",
+   "7501040000105"
+  ],
+  "para-ti": [
+   "7501025400040",
+   "7501052418038",
+   "2000000000042",
+   "7501006559019",
+   "7501086801046",
+   "7501035911108"
+  ]
+ }
+}

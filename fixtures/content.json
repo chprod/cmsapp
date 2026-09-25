@@ -1,0 +1,122 @@
+{
+  "$comment": "Contenido publicado de ejemplo, con la misma forma normalizada que el Resolver obtiene de Strapi. Sirve para correr el Resolver y el simulador sin Strapi.",
+  "audiences": [
+    { "id": "aud_todos", "name": "Todos los clientes", "rule": { "match": "all", "conditions": [] } },
+    { "id": "aud_nuevos", "name": "Clientes nuevos", "rule": { "match": "all", "conditions": [ { "attribute": "orderCount", "operator": "eq", "value": 0 } ] } },
+    { "id": "aud_recurrentes", "name": "Clientes recurrentes", "rule": { "match": "all", "conditions": [ { "attribute": "orderCount", "operator": "gte", "value": 2 }, { "attribute": "daysSinceLastOrder", "operator": "lte", "value": 30 } ] } },
+    { "id": "aud_con_pedidos", "name": "Clientes con pedidos", "rule": { "match": "all", "conditions": [ { "attribute": "orderCount", "operator": "gte", "value": 1 } ] } },
+    { "id": "aud_en_riesgo", "name": "Clientes en riesgo", "rule": { "match": "all", "conditions": [ { "attribute": "orderCount", "operator": "gte", "value": 1 }, { "attribute": "daysSinceLastOrder", "operator": "gt", "value": 45 } ] } }
+  ],
+  "experiences": [
+    {
+      "id": "exp_home_base",
+      "version": 7,
+      "name": "Home · Base nacional",
+      "screen": "home",
+      "audience": "aud_todos",
+      "storeScope": [],
+      "modalities": ["todas"],
+      "priority": 0,
+      "isFallback": true,
+      "startsAt": null,
+      "endsAt": null,
+      "publishedAt": "2026-09-01T15:00:00Z",
+      "updatedAt": "2026-09-01T15:00:00Z",
+      "modules": [
+        { "type": "hero-banner", "moduleKey": "hero_base", "spacingTop": "none", "trackingLabel": "Hero base",
+          "props": { "image": { "url": "https://cdn.chedraui.example/hero/despensa.webp", "alt": "Despensa surtida con básicos de la canasta" }, "title": "Todo para tu despensa", "subtitle": "Precios bajos todos los días", "cta": { "label": "Ver básicos", "deeplink": "chedraui://coleccion/basicos-canasta" } } },
+        { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "m", "props": { "title": "Categorías", "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar", "bebe"] } },
+        { "type": "product-carousel", "moduleKey": "basicos", "spacingTop": "l", "props": { "title": "Básicos de la canasta", "source": "collection", "collectionId": "basicos-canasta", "maxItems": 10, "cta": { "label": "Ver todo", "deeplink": "chedraui://coleccion/basicos-canasta" } } },
+        { "type": "promo-banner", "moduleKey": "promo_despensa", "spacingTop": "l", "props": { "image": { "url": "https://cdn.chedraui.example/promo/despensa.webp", "alt": "Productos de despensa con descuento" }, "title": "Ofertas de despensa", "mechanicLabel": "Hasta 25% de descuento", "validUntil": "2026-12-31T23:59:59-06:00", "cta": { "label": "Ver ofertas", "deeplink": "chedraui://coleccion/ofertas-despensa" } } },
+        { "type": "loyalty", "moduleKey": "lealtad", "spacingTop": "l", "fallbackImage": { "url": "https://cdn.chedraui.example/lealtad/fallback.webp", "alt": "Únete al programa de lealtad Chedraui" }, "props": { "memberTitle": "Tus puntos Chedraui", "nonMemberTitle": "Gana puntos en cada compra", "cta": { "label": "Conocer beneficios", "deeplink": "chedraui://lealtad" } } }
+      ]
+    },
+    {
+      "id": "exp_home_nuevos",
+      "version": 3,
+      "name": "Home · Nuevo cliente",
+      "screen": "home",
+      "audience": "aud_nuevos",
+      "storeScope": [],
+      "modalities": ["todas"],
+      "priority": 10,
+      "isFallback": false,
+      "publishedAt": "2026-09-10T15:00:00Z",
+      "updatedAt": "2026-09-10T15:00:00Z",
+      "modules": [
+        { "type": "hero-banner", "moduleKey": "hero_bienvenida", "spacingTop": "none", "trackingLabel": "Hero bienvenida",
+          "props": { "image": { "url": "https://cdn.chedraui.example/hero/bienvenida.webp", "alt": "Bolsa de súper con frutas, pan y leche" }, "title": "Tu primer súper, sin costo de envío", "subtitle": "En compras desde $499", "cta": { "label": "Empezar a comprar", "deeplink": "chedraui://coleccion/basicos-canasta" } } },
+        { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "m", "props": { "title": "Explora por categoría", "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar", "bebe", "carnes", "congelados"] } },
+        { "type": "product-carousel", "moduleKey": "populares", "spacingTop": "l", "props": { "title": "Lo más comprado", "source": "recommendation", "recommendationSlot": "populares", "maxItems": 8 } },
+        { "type": "loyalty", "moduleKey": "lealtad", "spacingTop": "l", "props": { "nonMemberTitle": "Gana puntos desde tu primera compra", "cta": { "label": "Unirme gratis", "deeplink": "chedraui://lealtad" } } }
+      ]
+    },
+    {
+      "id": "exp_home_recurrentes",
+      "version": 14,
+      "name": "Home · Recurrente",
+      "screen": "home",
+      "audience": "aud_recurrentes",
+      "storeScope": [],
+      "modalities": ["todas"],
+      "priority": 20,
+      "isFallback": false,
+      "publishedAt": "2026-09-18T15:00:00Z",
+      "updatedAt": "2026-09-18T15:00:00Z",
+      "modules": [
+        { "type": "order-status", "moduleKey": "estado_pedido", "spacingTop": "none", "props": {} },
+        { "type": "buy-again", "moduleKey": "volver_a_comprar", "spacingTop": "m", "props": { "title": "Volver a comprar", "maxItems": 10 } },
+        { "type": "shopping-lists", "moduleKey": "mis_listas", "spacingTop": "l", "props": { "title": "Tus listas" } },
+        { "type": "promo-mechanic", "moduleKey": "ofertas_despensa", "spacingTop": "l", "trackingLabel": "Ofertas % despensa", "props": { "title": "Ofertas en tu despensa", "mechanic": "%_descuento", "collectionId": "ofertas-despensa", "maxItems": 8 } },
+        { "type": "product-carousel", "moduleKey": "para_ti", "spacingTop": "l", "props": { "title": "Te puede interesar", "source": "recommendation", "recommendationSlot": "para-ti", "maxItems": 8 } },
+        { "type": "sponsored-carousel", "moduleKey": "patrocinado_bebidas", "spacingTop": "l", "props": { "title": "Bebidas para compartir", "advertiser": "Bebidas MX", "collectionId": "patrocinado-bebidas", "maxItems": 6 } },
+        { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "l", "props": { "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar", "bebe"] } }
+      ]
+    },
+    {
+      "id": "exp_camp_fyv_cdmx",
+      "version": 2,
+      "name": "Campaña · Frutas y verduras · CDMX",
+      "screen": "home",
+      "audience": "aud_todos",
+      "storeScope": ["seg_cdmx"],
+      "modalities": ["todas"],
+      "priority": 50,
+      "isFallback": false,
+      "startsAt": "2026-09-20T06:00:00-06:00",
+      "endsAt": "2026-10-05T23:59:59-06:00",
+      "notes": "Martes y miércoles de frescos extendido a dos semanas en CDMX. Pedido de Comercial FyV.",
+      "publishedAt": "2026-09-19T18:00:00Z",
+      "updatedAt": "2026-09-19T18:00:00Z",
+      "modules": [
+        { "type": "hero-banner", "moduleKey": "hero_fyv", "spacingTop": "none", "trackingLabel": "Hero FyV CDMX",
+          "props": { "image": { "url": "https://cdn.chedraui.example/hero/fyv.webp", "alt": "Frutas y verduras frescas de temporada" }, "title": "Frutas y verduras a mitad de precio", "subtitle": "Solo en tiendas de CDMX", "cta": { "label": "Ver ofertas", "deeplink": "chedraui://coleccion/fyv-temporada" } } },
+        { "type": "buy-again", "moduleKey": "volver_a_comprar", "spacingTop": "m", "visibilityRule": "aud_con_pedidos", "props": { "title": "Volver a comprar", "maxItems": 10 } },
+        { "type": "product-carousel", "moduleKey": "fyv_temporada", "spacingTop": "l", "props": { "title": "Frescos de temporada", "source": "collection", "collectionId": "fyv-temporada", "maxItems": 10 } },
+        { "type": "promo-mechanic", "moduleKey": "ofertas_despensa", "spacingTop": "l", "props": { "title": "Completa tu despensa", "mechanic": "%_descuento", "collectionId": "ofertas-despensa", "maxItems": 8 } },
+        { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "l", "props": { "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar"] } }
+      ]
+    },
+    {
+      "id": "exp_camp_buen_fin",
+      "version": 1,
+      "name": "Campaña · Buen Fin 2026",
+      "screen": "home",
+      "audience": "aud_todos",
+      "storeScope": [],
+      "modalities": ["todas"],
+      "priority": 60,
+      "isFallback": false,
+      "startsAt": "2026-11-13T00:00:00-06:00",
+      "endsAt": "2026-11-17T23:59:59-06:00",
+      "publishedAt": "2026-09-24T18:00:00Z",
+      "updatedAt": "2026-09-24T18:00:00Z",
+      "modules": [
+        { "type": "hero-banner", "moduleKey": "hero_buen_fin", "spacingTop": "none", "props": { "image": { "url": "https://cdn.chedraui.example/hero/buen-fin.webp", "alt": "Artículos del hogar con etiquetas de descuento" }, "title": "El Buen Fin llegó a tu súper", "subtitle": "Del 13 al 17 de noviembre", "cta": { "label": "Ver ofertas", "deeplink": "chedraui://coleccion/buen-fin-hogar" } } },
+        { "type": "product-carousel", "moduleKey": "buen_fin_hogar", "spacingTop": "l", "props": { "title": "Hogar al mejor precio", "source": "collection", "collectionId": "buen-fin-hogar", "maxItems": 10 } },
+        { "type": "buy-again", "moduleKey": "volver_a_comprar", "spacingTop": "l", "props": { "title": "Volver a comprar" } },
+        { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "l", "props": { "categoryIds": ["fyv", "lacteos", "basicos", "despensa", "bebidas", "hogar", "bebe"] } }
+      ]
+    }
+  ]
+}

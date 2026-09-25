@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+coverage/
+# Strapi
+apps/studio/.tmp/
+apps/studio/.cache/
+apps/studio/.strapi/
+apps/studio/build/
+apps/studio/public/uploads/*
+!apps/studio/public/uploads/.gitkeep
+apps/studio/types/generated/

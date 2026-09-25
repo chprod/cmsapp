@@ -1,0 +1,52 @@
+{
+  "customers": [
+    {
+      "id": "c_nueva",
+      "persona": "Nueva · se registró hoy",
+      "orderCount": 0,
+      "daysSinceLastOrder": null,
+      "loyaltyMember": false,
+      "preferredModality": null,
+      "activeOrder": null,
+      "lists": [],
+      "purchasedSkus": [],
+      "loyaltyPoints": 0
+    },
+    {
+      "id": "c_recurrente",
+      "persona": "Recurrente · repone cada semana",
+      "orderCount": 23,
+      "daysSinceLastOrder": 4,
+      "loyaltyMember": true,
+      "preferredModality": "super_veloz",
+      "activeOrder": { "id": "PED-88231", "status": "en_camino", "statusLabel": "Tu pedido va en camino", "eta": "Llega hoy entre 6 y 7 pm" },
+      "lists": [ { "id": "lst_1", "name": "Súper de la semana", "items": 18 }, { "id": "lst_2", "name": "Desayunos", "items": 7 } ],
+      "purchasedSkus": ["7501055300051", "7501000111206", "7501020565904", "7501008042953", "7501055363056", "2000000000011", "7501058617125", "7501000912346"],
+      "loyaltyPoints": 1840
+    },
+    {
+      "id": "c_dormido",
+      "persona": "En riesgo · 2 meses sin comprar",
+      "orderCount": 5,
+      "daysSinceLastOrder": 64,
+      "loyaltyMember": false,
+      "preferredModality": "envio_programado",
+      "activeOrder": null,
+      "lists": [],
+      "purchasedSkus": ["7501055300051", "7501000111206", "7501020565904", "7501008042953"],
+      "loyaltyPoints": 0
+    },
+    {
+      "id": "c_socio_mision",
+      "persona": "Socio · compra por misión, sin listas",
+      "orderCount": 2,
+      "daysSinceLastOrder": 12,
+      "loyaltyMember": true,
+      "preferredModality": "pickup",
+      "activeOrder": null,
+      "lists": [],
+      "purchasedSkus": ["7501055363056", "7501058617125"],
+      "loyaltyPoints": 320
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@chedraui-xp/resolver",
+  "version": "0.1.0-alpha",
+  "private": true,
+  "description": "Experience Resolver (BFF): decide qué Home ve cada cliente y la hidrata con catálogo, inventario, pedidos y lealtad",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.ts",
+    "dev": "node --watch src/main.ts"
+  },
+  "dependencies": {
+    "@chedraui-xp/contract": "0.1.0-alpha"
+  }
+}
