@@ -42,6 +42,32 @@ services:
       - key: SEED_ON_BOOT
         value: "true"
       - key: RESOLVER_WEBHOOK_URL
-        sync: false
+        value: https://cmsapp-resolver.onrender.com/v1/webhooks/strapi
       - key: RESOLVER_WEBHOOK_SECRET
+        fromService:
+          type: web
+          name: cmsapp-resolver
+          envVarKey: WEBHOOK_SECRET
+
+  - type: web
+    name: cmsapp-resolver
+    runtime: node
+    plan: free
+    rootDir: .
+    buildCommand: npm ci
+    startCommand: npm run start -w @chedraui-xp/resolver
+    envVars:
+      - key: NODE_VERSION
+        value: 22.18.0
+      - key: NODE_ENV
+        value: production
+      - key: CONTENT_SOURCE
+        value: strapi
+      - key: STRAPI_URL
+        value: https://cmsapp-studio.onrender.com
+      - key: STRAPI_TOKEN
         sync: false
+      - key: WEBHOOK_SECRET
+        generateValue: true
+      - key: SIMULATOR_ENABLED
+        value: "true"
