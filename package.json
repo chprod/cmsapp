@@ -5,6 +5,7 @@
   "description": "CMS App alfa · Experience Studio (Strapi) + Experience Resolver + simulador de Home server-driven",
   "type": "module",
   "workspaces": [
+    "apps/*",
     "packages/*",
     "services/*",
     "tools/*"
