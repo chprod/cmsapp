@@ -48,6 +48,8 @@
           "props": { "image": { "url": "https://cdn.chedraui.example/hero/bienvenida.webp", "alt": "Bolsa de súper con frutas, pan y leche" }, "title": "Tu primer súper, sin costo de envío", "subtitle": "En compras desde $499", "cta": { "label": "Empezar a comprar", "deeplink": "chedraui://coleccion/basicos-canasta" } } },
         { "type": "category-rail", "moduleKey": "categorias", "spacingTop": "m", "props": { "title": "Explora por categoría", "categoryIds": ["fyv", "lacteos", "basicos", "panaderia", "despensa", "bebidas", "hogar", "bebe", "carnes", "congelados"] } },
         { "type": "product-carousel", "moduleKey": "populares", "spacingTop": "l", "props": { "title": "Lo más comprado", "source": "recommendation", "recommendationSlot": "populares", "maxItems": 8 } },
+        { "type": "promo-banner", "moduleKey": "promo_despensa_nuevos", "spacingTop": "l", "props": { "image": { "url": "https://cdn.chedraui.example/promo/despensa.webp", "alt": "Productos de despensa con descuento" }, "title": "Ofertas para empezar tu despensa", "mechanicLabel": "Ahorra en productos seleccionados", "validUntil": "2026-12-31T23:59:59-06:00", "cta": { "label": "Ver ofertas", "deeplink": "chedraui://coleccion/ofertas-despensa" } } },
+        { "type": "product-carousel", "moduleKey": "fyv_temporada_nuevos", "spacingTop": "l", "props": { "title": "Frutas y verduras de temporada", "source": "collection", "collectionId": "fyv-temporada", "maxItems": 8, "cta": { "label": "Ver frescos", "deeplink": "chedraui://coleccion/fyv-temporada" } } },
         { "type": "loyalty", "moduleKey": "lealtad", "spacingTop": "l", "props": { "nonMemberTitle": "Gana puntos desde tu primera compra", "cta": { "label": "Unirme gratis", "deeplink": "chedraui://lealtad" } } }
       ]
     },
